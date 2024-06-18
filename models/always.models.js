@@ -6,7 +6,7 @@ const all = async () => {
 }
 
 const one = async (rut) => {
-    const querySQL = 'SELECT FROM musicos WHERE rut=$1 RETURNING *;'
+    const querySQL = 'SELECT * FROM musicos WHERE rut=$1 RETURNING *;'
     const { rows } = await pool.query(querySQL, [rut])
     return rows
 }
