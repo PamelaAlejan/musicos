@@ -5,11 +5,11 @@ const router = Router()
 
 //PATH /musicos
 
-router.get('/', alwaysController.getStudents)
-router.post('/', alwaysController.postMusicos)
-router.put('/:rut', alwaysController.putMusicos)
-router.delete('/:rut', alwaysController.deleteMusicos)
-router.get('/:rut', alwaysController.consultaone)
+router.get('/', alwaysController.getStudents) // consulta varios
+router.post('/', alwaysController.postMusicos) // incluir
+router.put('/:rut', alwaysController.putMusicos) // modificar
+router.delete('/:rut', alwaysController.deleteMusicos) // eliminar
+router.get('/:rut', alwaysController.consultaone) // consulta uno
 
 
 export default router;
